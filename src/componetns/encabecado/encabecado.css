@@ -1,0 +1,125 @@
+.portada {
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  padding: 20px;
+  margin-bottom: 70px;
+
+  overflow: hidden;
+}
+
+/* Circulo */
+.circulo {
+  --radio: 128px;
+
+  position: relative;
+  width: var(--radio);
+  height: var(--radio);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada .circulo .borde {
+  position: absolute;
+
+  top: 0%;
+
+  height: 5px;
+  width: 10px;
+  background-color: #00ff9a;
+  box-shadow: 0 0 10px #00ff9a;
+
+  transform-origin: center 64px;
+}
+
+.portada .contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  text-align: center;
+}
+
+/* Botones */
+.portada .botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  gap: 20px;
+}
+
+@media (max-width: 500px) {
+  .portada .botones {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #152233;
+
+  cursor: pointer;
+
+  position: relative;
+  /* overflow: hidden; */
+
+  z-index: 200;
+}
+
+.btn .cuadrado {
+  --size: 10px;
+
+  width: var(--size);
+  height: var(--size);
+
+  position: absolute;
+
+  top: 10px;
+  right: 0;
+
+  background-color: var(--color);
+
+  opacity: 0;
+
+  z-index: 1;
+}
+
+.btn .texto {
+  color: #fff;
+  font-size: 18px;
+
+  z-index: 5;
+  transition: transform 0.7s ease;
+}
+
+.btn:hover .texto {
+  transform: scale(1.1);
+}
+
+.btn p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}

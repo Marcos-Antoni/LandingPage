@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <section class="portada">
+      <div class="circulo">
+        <h1>MB</h1>
+      </div>
+      <div class="contenedor">
+        <h1 class="titulo">Marco Barrera</h1>
+        <p>Desarrollador FullStack listo para ayudarte en tus proyectos</p>
+      </div>
+      <div class="botones">
+        <a href="#portafolio">
+          <button class="btn">
+            <p class="texto">Proyectos</p>
+            <span class="cuadrado" style="--color: #c14040; opacity: 0"></span>
+          </button>
+        </a>
+        <a href="#contacto">
+          <button class="btn">
+            <p class="texto">Contactos</p>
+            <span class="cuadrado" style="--color: #009aa3; opacity: 0"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section class="portafolio" id="portafolio">
+      <h2>Portafolio</h2>
+      <div class="contenedor">
+        <div class="caja" style="--color: #c14040">
+          <div class="contenido">
+            <h2>Worddle color</h2>
+            <p>
+              Worddle color es un juego de palabras que se basa en la popular
+              Wordle, pero con una diferencia: en lugar de adivinar una palabra
+              aleatoria, el jugador debe adivinar una palabra que se muestra en
+              la pantalla.
+            </p>
+            <div>
+              <i data-lucide="gamepad2" class="icono"></i>
+            </div>
+            <a
+              href="https://github.com/Marcos-Antoni/Worddle-color"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="btn">
+                <p class="texto">Codigo <i data-lucide="code"></i></p>
+                <span
+                  class="cuadrado con"
+                  style="--color: #8c8c8c; opacity: 0"
+                ></span>
+              </button>
+            </a>
+            <a
+              href="https://marcos-antoni.github.io/Worddle-color/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="btn">
+                <p class="texto">Web <i data-lucide="app-window"></i></p>
+                <span
+                  class="cuadrado con"
+                  style="--color: #21c063; opacity: 0"
+                ></span>
+              </button>
+            </a>
+          </div>
+          <div class="superior">
+            <i data-lucide="gamepad2" class="icono"></i>
+          </div>
+          <div class="inferior">
+            <p>Worddle color</p>
+          </div>
+        </div>
+        <div class="caja" style="--color: #009aa3">
+          <div class="contenido"></div>
+          <div class="superior">
+            <i data-lucide="book-open-check" class="icono"></i>
+          </div>
+          <div class="inferior">
+            <p>Prueva de JS</p>
+          </div>
+        </div>
+        <div class="caja" style="--color: #f5c642">
+          <div class="contenido"></div>
+          <div class="superior">
+            <i data-lucide="book-type" class="icono"></i>
+          </div>
+          <div class="inferior">
+            <p>Generador de Personajes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
+      <div class="caja">
+        <!-- Has que se abra en una nueva pestaña -->
+        <a
+          href="https://github.com/Marcos-Antoni"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="btn">
+            <p class="texto">Github <i data-lucide="github"></i></p>
+            <span
+              class="cuadrado con"
+              style="--color: #8c8c8c; opacity: 0"
+            ></span>
+          </button>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/marcob-dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="btn">
+            <p class="texto">Linkedin <i data-lucide="linkedin"></i></p>
+            <span
+              class="cuadrado con"
+              style="--color: #0a66c2; opacity: 0"
+            ></span>
+          </button>
+        </a>
+
+        <a
+          href="mailto:marcos7barrera@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="btn">
+            <p class="texto">Correo <i data-lucide="mail"></i></p>
+            <span
+              class="cuadrado con"
+              style="--color: #ea4335; opacity: 0"
+            ></span>
+          </button>
+        </a>
+        <a
+          href="https://wa.me/50242403209"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="btn">
+            <p class="texto">Whatsapp <i data-lucide="phone"></i></p>
+            <span
+              class="cuadrado con"
+              style="--color: #21c063; opacity: 0"
+            ></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h2>Marco Barrera</h2>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

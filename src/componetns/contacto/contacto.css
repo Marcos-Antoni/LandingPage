@@ -1,0 +1,34 @@
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacto .caja {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: center;
+  align-items: center;
+
+  gap: 30px;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (max-width: 900px) {
+  .contacto .caja {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacto .caja {
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
+}

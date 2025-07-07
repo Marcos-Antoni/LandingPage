@@ -1,0 +1,175 @@
+.portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.portafolio .contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+  padding: 20px 0;
+
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .portafolio .contenedor {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.portafolio .contenedor .caja {
+  width: 300px;
+  height: 400px;
+
+  background: #152233;
+
+  position: relative;
+}
+
+.portafolio .contenedor .caja .superior {
+  width: 100%;
+  height: 120px;
+
+  background: #fff;
+  position: relative;
+
+  transition: transform 0.5s;
+
+  z-index: 10;
+}
+
+.portafolio .contenedor .caja .superior .icono {
+  color: var(--color);
+
+  width: 144px;
+  height: 74px;
+
+  position: absolute;
+
+  bottom: -50px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.portafolio .contenedor .caja:hover .superior {
+  transform: translateY(-100%) rotateX(90deg);
+}
+
+.portafolio .contenedor .caja .superior::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+
+  bottom: -70px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 144px;
+  height: 74px;
+
+  border-radius: 0px 0px 80px 80px;
+
+  background: #fff;
+}
+
+.portafolio .contenedor .caja .inferior {
+  width: 100%;
+  height: 280px;
+
+  position: relative;
+
+  background: var(--color);
+  border-top: 10px solid #152233;
+
+  transition: transform 0.5s;
+  transition-delay: 0.1s;
+
+  overflow: hidden;
+
+  z-index: 9;
+}
+
+.portafolio .contenedor .caja:hover .inferior {
+  transform: translateY(100%) rotateX(90deg);
+}
+
+.portafolio .contenedor .caja .inferior::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+
+  top: -14px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 162px;
+  height: 84px;
+
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+
+  background: #152233;
+}
+
+.portafolio .contenedor .caja .inferior p {
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 85%;
+
+  background: #fff;
+  color: #152233;
+
+  box-shadow: 0px 0px 0px 10px #152233;
+
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 5px 25px;
+}
+
+.portafolio .contenedor .caja .contenido {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 5px 20px;
+
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 20px;
+
+  z-index: 1;
+  transition: opacity 0.5s;
+  transition-delay: 0.3s;
+}
+
+.portafolio .contenedor .caja:hover .contenido {
+  opacity: 1;
+}
+
+.portafolio .contenedor .caja .contenido .btn {
+  background-color: #041122;
+}
